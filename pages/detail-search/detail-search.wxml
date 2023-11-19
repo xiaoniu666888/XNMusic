@@ -1,0 +1,5 @@
+<!--pages/detail-search/detail-search.wxml-->
+<view  style="text-align: center;">
+  <text>搜索功能正在开发中......</text>
+</view>
+

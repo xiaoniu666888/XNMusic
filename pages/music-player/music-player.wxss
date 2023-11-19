@@ -1,0 +1,162 @@
+/* pages/music-player/music-player.wxss */
+.bg-image,
+.bg-cover {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bg-cover {
+  background-color: rgba(0, 0, 0, .1);
+  backdrop-filter: blur(20px);
+}
+
+/* 导航中的center */
+.tabs {
+  display: flex;
+  font-size: 28rpx;
+  align-items: center;
+  color: rgb(204, 197, 197);
+}
+
+.tabs .divider {
+  margin: 0 8rpx;
+}
+
+.tabs .active {
+  color: #fff;
+}
+
+/* 歌曲布局 */
+.music {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx 60rpx;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 28rpx;
+}
+
+.music .album {
+  flex: 1;
+}
+
+.music .album .image {
+  width: 100%;
+  border-radius: 12rpx;
+}
+
+.music .info {
+  margin-top: 10rpx;
+}
+
+.music .info .name {
+  font-size: 48rpx;
+  font-weight: 700;
+}
+
+.music .info .singer {
+  margin-top: 10rpx;
+
+}
+
+.music .lyric {
+  text-align: center;
+  margin: 16rpx 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.music .block {
+
+  height: 30px;
+  display: block;
+  margin: 16rpx 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.music .progress {
+  margin: 12rpx 0;
+}
+
+.music .progress .slider {
+  margin: 16rpx 8rpx 10rpx 18rpx;
+}
+
+.music .progress .time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+}
+
+.music .controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12rpx 0;
+}
+
+.music .controls .btn {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.music .controls .previous {
+  width: 60rpx;
+  height: 55rpx;
+}
+
+.music .controls .next {
+  width: 60rpx;
+  height: 55rpx;
+}
+
+.music .controls .mode {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.music .controls .play {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.music .controls .pausecircle {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+/* 歌词样式 */
+.lyric-list {
+  color: rgb(201, 198, 198);
+  font-size: 28rpx;
+  text-align: center;
+  height: 100%;
+}
+
+.lyric-list .item {
+  height: 35px;
+  line-height: 35px;
+}
+.lyric-list .item.active {
+ color: rgb(76, 214, 83);
+ font-size: 32rpx;
+}
+
+.lyric-list ::-webkit-scrollbar {
+  display: none;
+}
+
+/* .lyric-list .item:first-of-type {
+  padding-top: 100px;
+}
+
+.lyric-list .item:last-of-type {
+  padding-bottom: 100px;
+} */
